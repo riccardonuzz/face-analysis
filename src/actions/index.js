@@ -10,8 +10,8 @@ export const DELETE_GALLERY = 'delete_gallery';
 
 const APP_ID = 'APP_ID';
 const API_KEY = 'APP_KEY';
+const CALLBACK_URL = 'http://192.168.137.3/?Led=1'; //just an example callback
 const ROOT_URL = 'https://api.kairos.com/';
-const CALLBACK_URL = 'http://192.168.137.3/?Led=1';
 
 const config = {
   headers: {
