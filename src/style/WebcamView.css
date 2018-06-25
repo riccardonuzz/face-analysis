@@ -1,0 +1,90 @@
+.webcamview {
+    width: 100%;
+}
+
+.overlay {
+    position: fixed; /* Sit on top of the page content */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 999; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+    color: white
+}
+
+.loading-icon {
+    position:absolute;
+    top:0;
+    bottom:0;
+    margin:auto;
+    margin-left: -75px;
+    left: 50%
+}
+
+.head-overlay {
+    position: absolute;
+    height: 480px;
+    left: 50%;
+    margin-left: -320px;
+    width: 640px;
+    opacity: 0.7;
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    .head-overlay {
+        position: absolute;
+        height: 397px;
+        left: 50%;
+        margin-top: 48px;
+        margin-left: -256px;
+        width: 512px;
+        opacity: 0.7;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .head-overlay {
+        /* position: absolute;
+        height: 32%;
+        left: 0%;
+        margin-top: 138px;
+        margin-left: 16px;
+        width: 90%;
+        opacity: 0.7; */
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .head-overlay-small {
+        position: absolute;
+        height: 200px;
+        /* left: 50%; */
+        margin-left: -255px;
+        width: 255px;
+        opacity: 0.7;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .head-overlay-small {
+        position: absolute;
+        height: 162px;
+        /* left: 50%; */
+        margin-top: 18px;
+        margin-left: -211px;
+        width: 211px;
+        opacity: 0.7;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .head-overlay-small {
+        
+        display: none;
+    }
+}
