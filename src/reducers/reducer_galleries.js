@@ -1,4 +1,7 @@
-import { FETCH_GALLERIES, DELETE_GALLERY } from '../actions';
+import { 
+    FETCH_GALLERIES,
+    DELETE_GALLERY
+} from '../constants';
 
 export default (state = {}, action) => {
     switch(action.type) {

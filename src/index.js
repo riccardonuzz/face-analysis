@@ -7,17 +7,22 @@ import { createStore, applyMiddleware } from 'redux';
 import promise from 'redux-promise';
 import reducers from './reducers';
 
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { 
+    BrowserRouter,
+    Route,
+    Switch 
+} from 'react-router-dom';
 
 import './style/index.css';
 import 'bootstrap/dist/css/bootstrap.css';
 
-import App from './components/App';
-import Gallery from './components/Gallery';
 import Nav from './components/Nav';
-import GalleryDetail from './components/GalleryDetail';
-import AddFace from './containers/AddFace';
-import AddGallery from './containers/AddGallery';
+import Home from './containers/Home';
+import Galleries from './containers/Galleries';
+import Faces from './containers/Faces';
+import NewGallery from './containers/NewGallery';
+import NewFace from './containers/NewFace';
+
 
 
 const createStoreWithMiddleware = applyMiddleware(promise)(createStore);
@@ -28,11 +33,11 @@ ReactDOM.render(
             <div>
                 <Nav />
                 <Switch>
-                    <Route path="/gallery/view/:galleryId/add" component={AddFace} />
-                    <Route path="/gallery/view/:galleryId" component={GalleryDetail} />
-                    <Route path="/gallery/add" component={AddGallery} />
-                    <Route path="/gallery" component={Gallery} />
-                    <Route path="/" component={App} />
+                    <Route path="/gallery/view/:galleryId/add" component={NewFace} />
+                    <Route path="/gallery/view/:galleryId" component={Faces} />
+                    <Route path="/galleries/add" component={NewGallery} />
+                    <Route path="/galleries" component={Galleries} />
+                    <Route path="/" component={Home} />
                 </Switch>
             </div>
         </BrowserRouter>

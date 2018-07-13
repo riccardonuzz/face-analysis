@@ -1,10 +1,10 @@
 import {
-        FETCH_FACE_INFORMATIONS,
-        FETCH_FACES,
-        FETCH_FACE_RECOGNITION,
-        ADD_FACE_TO_GALLERY,
-        DELETE_FACE
-    } from '../actions';
+    FETCH_FACE_INFORMATIONS,
+    FETCH_FACES,
+    FETCH_FACE_RECOGNITION,
+    ADD_FACE_TO_GALLERY,
+    DELETE_FACE
+} from '../constants';
 
 export default (state = {}, action) => {
     switch(action.type) {
