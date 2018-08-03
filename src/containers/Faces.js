@@ -8,7 +8,7 @@ import {FaUserPlus} from 'react-icons/lib/fa';
 
 
 class Faces extends Component {
-    componentWillMount() {
+    componentDidMount() {
         this.props.fetchFaces(this.props.match.params.galleryId);
     }
 
